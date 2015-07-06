@@ -12,7 +12,7 @@
   <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
 
   <!-- The main CSS file -->
-  <link href="assets_gallerie/css/styleupload.css" rel="stylesheet" />
+  <link href="assets_galerie/css/styleupload.css" rel="stylesheet" />
 
 
   <style>
@@ -61,14 +61,14 @@
 
 <!-- upload scripts-->
 <!-- JavaScript Includes -->
-<script src="assets_gallerie/js/jquery.knob.js"></script>
+<script src="assets_galerie/js/jquery.knob.js"></script>
 
 <!-- jQuery File Upload Dependencies -->
-<script src="assets_gallerie/js/jquery.ui.widget.js"></script>
-<script src="assets_gallerie/js/jquery.iframe-transport.js"></script>
-<script src="assets_gallerie/js/jquery.fileupload.js"></script>
+<script src="assets_galerie/js/jquery.ui.widget.js"></script>
+<script src="assets_galerie/js/jquery.iframe-transport.js"></script>
+<script src="assets_galerie/js/jquery.fileupload.js"></script>
 
 <!-- Our main JS file -->
-<script src="assets_gallerie/js/script.js"></script>
+<script src="assets_galerie/js/script.js"></script>
 
 </html>
