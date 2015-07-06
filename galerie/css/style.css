@@ -33,7 +33,7 @@
 		-ms-transition: color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out;
 	}
-	
+
 		a:hover
 		{
 			color: #d64760;
@@ -45,16 +45,16 @@
 		color: #fff;
 		letter-spacing: -0.05em;
 	}
-	
+
 	strong, b
 	{
 		color: #fff;
 		color: rgba(255,255,255,0.85);
 		font-weight: 600;
 	}
-	
+
 	/* List */
-	
+
 		ul
 		{
 		}
@@ -64,18 +64,18 @@
 				cursor: default;
 				margin: 0 0 1em 0;
 			}
-			
+
 				ul.contact li
 				{
 					display: inline-block;
 					font-size: 1.5em;
 				}
-				
+
 				ul.contact li span
 				{
 					display: none;
 				}
-				
+
 				ul.contact li a
 				{
 					opacity: 0.35;
@@ -86,18 +86,18 @@
 					-ms-transition: opacity 0.25s ease-in-out;
 					transition: opacity 0.25s ease-in-out;
 				}
-				
+
 					ul.contact li a:hover
 					{
 						opacity: 1.0;
 					}
-	
+
 	/* Item */
 
 		.item
 		{
 		}
-		
+
 			.item.thumb
 			{
 				display: block;
@@ -106,7 +106,7 @@
 				background: rgba(255,255,255,0.25);
 				cursor: default;
 			}
-			
+
 				.item.thumb h2
 				{
 					position: absolute;
@@ -120,7 +120,7 @@
 					line-height: 1em;
 					z-index: 2;
 				}
-				
+
 				.item.thumb img
 				{
 					display: block;
@@ -161,7 +161,7 @@
 		position: relative;
 		z-index: 1;
 	}
-	
+
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -169,7 +169,7 @@
 	#main
 	{
 	}
-	
+
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -181,7 +181,7 @@
 		color: #fff;
 		cursor: default;
 	}
-	
+
 		#header p
 		{
 			opacity: 0.65;
