@@ -12,8 +12,116 @@
 body {
 		background: #fff;
 		font-family: 'Lane';
-		color: #fff;
+		color: black;
 		 }
+
+#one {
+	font-family: "Lane";
+	color: black;
+}
+#two {
+	font-family: "Lane";
+	color: black;
+}
+#three {
+	font-family: "Lane";
+	color: black;
+}
+#conteneur-menu2 {
+		 	height: 100%;
+		 	width: 100%;
+			color: #000;
+		 }
+
+#conteneur-menu2 ul {
+		 	margin-left: 10%;
+			margin-right: 10%;
+		 	float: center;
+		 }
+
+#conteneur-menu2 ul li {
+		 	list-style: none;
+		 }
+
+#conteneur-menu2 ul li a {
+		 	text-decoration: none;
+		 	font-size: 25px;
+			margin-left: 30px;
+			margin-right: 30px;
+			float: center;
+			width: 80%;
+		 	display: block;
+		 	color: #000;
+		 	background: transparent;
+		 	width: 100%;
+		 	-moz-transition: all .5s;
+		     -webkit-transition: all .5s;
+		     -o-transition: all .5s;
+		     transition: all .5s;
+		     line-height: 20px;
+		 }
+
+#conteneur-menu2 ul li a:hover {
+		 	background: #818789;
+			opacity: 0.6;
+		 	width: 90%;
+		 	-moz-transition: all .5s;
+		     -webkit-transition: all .5s;
+		     -o-transition: all .5s;
+		     transition: all .5s;
+		 }
+
+
+#total a {
+	display:block;
+	color: #fff;
+	text-decoration:none;
+}
+#total > li,
+#total > li li {
+	position: relative;
+	display:inline-block;
+	width: 110px;
+	padding: 6px 15px;
+	background-color: #777;
+
+}
+#total > li li { background: transparent none; }
+#total > li li a { color: #444; }
+#total u > li li:hover { background:#eee; }
+#total > li:first-child {
+	border-right: 1px solid #777;
+	border-radius: 8px 0 0 8px;
+}
+#total > li + li {
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #777;
+}
+#total > li:last-child {
+	border-right: 0;
+	border-left: 1px solid #aaa;
+	border-radius: 0 8px 8px 0 ;
+}
+#total > li:hover {
+	background-color: #999;
+}
+/* (presque) fin de la partie positionnement/déco */
+/* dans cette déclaration, on fixe le max-height */
+#total ul {
+	position: absolute;
+	top: 2em; left: 0;
+	max-height:0em;
+	margin: 0; padding: 0;
+	background-color: #ddd;
+	overflow: hidden;
+	transition: 1s max-height 0.3s;
+	border-radius: 0 0 8px 8px;
+}
+/* ici on change la valeur de max-height au :hover */
+#total > li:hover ul {
+	/* à adapter, le minimum est le meilleur mais voyez large 😉 */
+	max-height: 13em;
+}
 
 #cssmenu ul {
 		  list-style: none;
@@ -45,7 +153,6 @@ body {
   font-weight: normal;
 }
 #cssmenu a:hover {
-  background: #2580a2 url("images/hover.gif") left center no-repeat;
   color: #fff;
   padding-bottom: 8px;
 }
@@ -216,7 +323,8 @@ body {
 	}
 
 	header p {
-		color: #b2b2b2;
+		color: black;
+		font-family: 'Lane'
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -969,7 +1077,9 @@ body {
 /* Header */
 
 	#header {
-		background-color: #000;
+		border-right: solid;
+		background-color: #FFF;
+		color: #000;
 		height: 100%;
 		left: 0;
 		padding: 8em 4em 0 0;
