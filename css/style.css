@@ -50,6 +50,7 @@ body {
 			margin-right: 30px;
 			float: center;
 			width: 80%;
+			display: block;
 		 	color: #000;
 		 	background: transparent;
 		 	width: 100%;
@@ -57,7 +58,7 @@ body {
 		     -webkit-transition: all .5s;
 		     -o-transition: all .5s;
 		     transition: all .5s;
-		     line-height: 50px;
+		     line-height: 90px;
 		 }
 
 #conteneur-menu2 ul li a:hover {
