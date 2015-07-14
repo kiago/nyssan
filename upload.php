@@ -1,5 +1,5 @@
 <?php
-
+include 'db.php';
 // A list of permitted file extensions
 $allowed = array('png', 'jpg', 'gif','zip');
 
@@ -13,6 +13,20 @@ if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
 	}
 
 	if(move_uploaded_file($_FILES['upl']['tmp_name'], 'uploads/'.$_FILES['upl']['name'])){
+				//insert into database
+							$title = "titre_test2";
+							$order = 0;
+							$statement = "INSERT INTO `oeuvres` (`title`, `order`) VALUES ('" . $title . "', '" . $order . "');";
+							if(mysqli_query($conn,$statement)===true){
+								$message.="Nouvelle entrée avec succès !\n";
+								exit;
+							}
+							else{
+								echo(mysqli_error($conn));
+								exit;
+							}
+
+
 		echo '{"status":"success"}';
 		exit;
 	}
@@ -20,3 +34,5 @@ if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
 
 echo '{"status":"error"}';
 exit;
+
+?>
