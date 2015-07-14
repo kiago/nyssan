@@ -2,7 +2,7 @@
 include 'db.php';
 // A list of permitted file extensions
 $allowed = array('png', 'jpg', 'gif','zip');
-
+$message="emptymessage";
 if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
 
 	$extension = pathinfo($_FILES['upl']['name'], PATHINFO_EXTENSION);
@@ -14,7 +14,7 @@ if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
 
 	if(move_uploaded_file($_FILES['upl']['tmp_name'], 'uploads/'.$_FILES['upl']['name'])){
 				//insert into database
-							$title = "titre_test2";
+							$title = $_FILES['upl']['name'];
 							$order = 0;
 							$statement = "INSERT INTO `oeuvres` (`title`, `order`) VALUES ('" . $title . "', '" . $order . "');";
 							if(mysqli_query($conn,$statement)===true){
