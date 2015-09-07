@@ -70,7 +70,7 @@ section, footer, header, aside{
     margin-bottom: 30px;
     border: 20px solid rgba(0, 0, 0, 0);
     border-radius: 3px;
-    border-image: url('../image/border-image.png') 25 repeat;
+    border-image: url('../images/border-image.png') 25 repeat;
     text-align: center;
     text-transform: uppercase;
 
@@ -154,7 +154,7 @@ section, footer, header, aside{
 #upload ul li span{
     width: 15px;
     height: 12px;
-    background: url('../image/icons.png') no-repeat;
+    background: url('../images/icons.png') no-repeat;
     position: absolute;
     top: 34px;
     right: 33px;
